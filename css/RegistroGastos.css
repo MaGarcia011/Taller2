@@ -1,0 +1,100 @@
+.monto {
+    text-align: center;
+    font-size: 70px;
+    /* Establece el tamaño de fuente deseado */
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 8rem;
+}
+
+.ingresos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cantidad {
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+}
+
+.cantidad:focus {
+    outline: none;
+}
+
+.categoria {
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.categoria:focus {
+    outline: none;
+}   
+
+.detalle{
+    border: 1px solid white;
+    width: 200px;
+    border-radius: 15px;
+    text-align: start;
+    height: 80px;
+    
+}
+
+.detalle:focus {
+    outline: none;
+}
+
+.egresos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Estilo personalizado para el botón Agregar egreso */
+#btn-egreso {
+    background-color: #007BFF; /* Color azul */
+    color: #fff; /* Texto blanco */
+    border: 1px solid #0056b3; /* Borde azul más oscuro */
+    box-shadow: 0 40px 20px rgba(0, 140, 255, 0.1), 0 0 10px rgba(29, 113, 202, 0.3); /* Sombra tridimensional más pronunciada */
+    transition: background-color 0.3s ease-in-out; /* Transición suave en el cambio de color de fondo */
+}
+
+/* Cambio de color de fondo al pasar el mouse */
+#btn-egreso:hover {
+    background-color: #0056b3; /* Cambio de color al azul más oscuro al pasar el mouse */
+}
+
+#btn-ingreso {
+    background-color: #007BFF; /* Color azul */
+    color: #fff; /* Texto blanco */
+    border: 1px solid #0056b3; /* Borde azul más oscuro */
+    box-shadow: 0 40px 20px rgba(0, 140, 255, 0.1), 0 0 10px rgba(29, 113, 202, 0.3); /* Sombra tridimensional más pronunciada */
+    transition: background-color 0.3s ease-in-out; /* Transición suave en el cambio de color de fondo */
+}
+
+/* Cambio de color de fondo al pasar el mouse */
+#btn-ingreso:hover {
+    background-color: #0056b3; /* Cambio de color al azul más oscuro al pasar el mouse */
+}
