@@ -29,6 +29,25 @@
 
 
   <title>Lista de vídeos</title>
+
+  <style>
+    /* Estilo para las miniaturas de los videos */
+    .video-thumbnail img {
+      max-width: 400px; /* Ajusta el tamaño de las miniaturas */
+      max-height: 200px;
+      border-radius: 5px; /* Opcional: esquinas redondeadas */
+    }
+
+    .card-body {
+      display: flex; /* Flex para organizar miniatura y texto */
+      align-items: center; /* Centrar contenido verticalmente */
+    }
+
+    .video-thumbnail {
+      margin-right: 20px; /* Separación entre la miniatura y el texto */
+    }
+  </style>
+
 </head>
 <body>
 
@@ -105,11 +124,22 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Video 1: Titulo video</h3>
-              <p class="text-black h5">
-                description video
-              </p>
-              <a class="text-primary h5" href="testinicial.html">Ver vídeo -></a>
+              <!-- Contenedor de la miniatura del video -->
+                <div class="video-thumbnail">
+                  <!-- Imagen representativa del video -->
+                    <img src="images/video1Logo.PNG" alt="Miniatura Video 1" class="img-fluid">
+                </div>
+                <div>
+                  <!-- Contenedor del texto -->
+                  <h3 class="heading text-primary">Educación Financiera para Principiantes</h3>
+                  <p class="text-black h5">
+                    Una de las cosas más importantes en la vida es la educación financiera. Nunca es demasiado 
+                    pronto para empezar a aprender sobre el dinero y cómo gestionarlo. La educación financiera 
+                    puede ayudarte a tomar mejores decisiones con tu dinero, ya sea que estés ahorrando para un 
+                    día lluvioso o invirtiendo para la jubilación.
+                  </p>
+                  <a class="text-primary h5" href="testinicial.html">Ver vídeo -></a>
+                </div>
             </div>
           </div>
         </div>
@@ -119,11 +149,19 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Video 2: Titulo video</h3>
-              <p class="text-black h5">
-                description video
-              </p>
-              <a class="text-primary h5" href="video2.html">Ver vídeo -></a>
+              <div class="video-thumbnail">
+                <img src="images/video2Logo.PNG" alt="Miniatura Video 2" class="img-fluid">
+              </div>
+              <div>
+                <h3 class="heading text-primary">Educación Financiera para Principiantes - Cómo funcionan las Finanzas</h3>
+                <p class="text-black h5">
+                  Esta es probablemente la manera más fácil para entender cómo funcionan las finanzas personales. 
+                  Lo hemos explicado con huevos y gallinas :)
+                  Es uno de los vídeos de Educación financiera para Principiantes, para que todos aprendemos reglas 
+                  básicas de las finanzas y cómo manejar el dinero.
+                </p>
+                <a class="text-primary h5" href="video2.html">Ver vídeo -></a>
+              </div>
             </div>
           </div>
         </div>
@@ -133,11 +171,19 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Video 3: Titulo video</h3>
-              <p class="text-black h5">
-                description video
-              </p>
-              <a class="text-primary h5" href="video3.html">Ver vídeo -></a>
+              <div class="video-thumbnail">
+                <img src="images/video3Logo.PNG" alt="Miniatura Video 3" class="img-fluid">
+              </div>
+              <div>
+                <h3 class="heading text-primary">Educación Financiera para Principiantes - Lo que necesitas saber antes de empezar</h3>
+                <p class="text-black h5">
+                  Recuerdo a mi profesor de finanzas en la universidad enfatizando
+                   la necesidad de la educación financiera, diciendo: "Entender el dinero es clave para navegar los desafíos de
+                    la vida". Este mensaje se quedó conmigo, y hoy quiero compartir una introducción completa a la educación 
+                    financiera.
+                </p>
+                <a class="text-primary h5" href="video3.html">Ver vídeo -></a>
+              </div>
             </div>
           </div>
         </div>
@@ -147,11 +193,17 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Video 4: Titulo video</h3>
-              <p class="text-black h5">
-                description video
-              </p>
-              <a class="text-primary h5" href="video4.html">Ver vídeo -></a>
+              <div class="video-thumbnail">
+                <img src="images/video4Logo.PNG" alt="Miniatura Video 4" class="img-fluid">
+              </div>
+              <div>
+                <h3 class="heading text-primary">Educación financiera en 10 minutos- ¡NECESITAS APRENDER ESTO URGENTEMENTE! 🔥</h3>
+                <p class="text-black h5">
+                  "¡NECESITAS APRENDER ESTO URGENTEMENTE! 🔥 Cambia tus Finanzas en 10 Minutos 💸"
+                  "¡APRENDE ESTOS SECRETOS FINANCIEROS YA! 💰 Lo que Muchos Desconocen 🕒"
+                </p>
+                <a class="text-primary h5" href="video4.html">Ver vídeo -></a>
+              </div>
             </div>
           </div>
         </div>
