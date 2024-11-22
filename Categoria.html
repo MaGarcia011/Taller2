@@ -29,6 +29,25 @@
 
 
   <title>Categorías</title>
+
+  <style>
+    /* Estilo para las imágenes de los logos dentro de las tarjetas */
+    .category-logo img {
+      max-width: 200px; /* Tamaño máximo del ancho */
+      max-height: 200px; /* Tamaño máximo del alto */
+      border-radius: 5px; /* Esquinas redondeadas (opcional) */
+    }
+
+    .card-body {
+      display: flex; /* Estilo flex para alinear imagen y texto */
+      align-items: center; /* Centrar verticalmente el contenido */
+    }
+
+    .category-logo {
+      margin-right: 10px; /* Separación entre el logo y el texto */
+    }
+  </style>
+
 </head>
 <body>
 
@@ -94,21 +113,25 @@
 
   <div class="section" >
     <div class="container" >
-
-      
       <div class="row justify-content- align-items-stretch">
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Educación financiera</h3>
-              <p class="text-black h5">
-                “El proceso por el cual los consumidores/inversores financieros mejoran su conocimiento
-                sobre los productos, conceptos y riesgos financieros y, a través de información, instrucción
-                y/o consejo objetivo, desarrollan las habilidades y confianza para adquirir una mayor
-                concienciación de los riesgos y oportunidades financieras, para tomar decisiones
-                informadas”
-              </p>
-              <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              <div class="category-logo">
+                <!-- Imagen del logo de la categoría -->
+                <img src="images/educacionFinancieraLogo.png" alt="Logo Educación Financiera" class="img-fluid">
+              </div>
+              <div>
+                <h3 class="heading text-primary">Educación financiera</h3>
+                <p class="text-black h5">
+                  “El proceso por el cual los consumidores/inversores financieros mejoran su conocimiento
+                  sobre los productos, conceptos y riesgos financieros y, a través de información, instrucción
+                  y/o consejo objetivo, desarrollan las habilidades y confianza para adquirir una mayor
+                  concienciación de los riesgos y oportunidades financieras, para tomar decisiones
+                  informadas”
+                </p>
+                <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              </div>
             </div>
           </div>
         </div>
@@ -118,14 +141,20 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Planificación financiera</h3>
-              <p class="text-black h5">
-                “La planeación financiera, también conocida como planeación conectada, permite a las
-                personas modelar la dirección estratégica y tomar medidas para optimizar el rendimiento
-                financiero. Este enfoque es prospectivo y se utiliza para ayudar a las finanzas a guiar a la
-                persona en el logro de sus objetivos”
-              </p>
-              <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              <div class="category-logo">
+                <!-- Imagen del logo de la categoría -->
+                <img src="images/planificacionFinanciera.PNG" alt="Logo Educación Financiera" class="img-fluid">
+              </div>
+              <div>
+                <h3 class="heading text-primary">Planificación financiera</h3>
+                <p class="text-black h5">
+                  “La planeación financiera, también conocida como planeación conectada, permite a las
+                  personas modelar la dirección estratégica y tomar medidas para optimizar el rendimiento
+                  financiero. Este enfoque es prospectivo y se utiliza para ayudar a las finanzas a guiar a la
+                  persona en el logro de sus objetivos”
+                </p>
+                <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              </div>
             </div>
           </div>
         </div>
@@ -135,14 +164,20 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Ahorro</h3>
-              <p class="text-black h5">
-                “El ahorro es el porcentaje de los ingresos que la persona no gasta, con el propósito de
-                contar con recursos económicos para un desembolso que podría efectuarse más adelante,
-                invertirlo en un objetivo de futuro o simplemente reservarlo para una circunstancia
-                inesperada”
-              </p>
-              <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              <div class="category-logo">
+                <!-- Imagen del logo de la categoría -->
+                <img src="images/ahorroLogo.PNG" alt="Logo Educación Financiera" class="img-fluid">
+              </div>
+              <div>
+                <h3 class="heading text-primary">Ahorro</h3>
+                <p class="text-black h5">
+                  “El ahorro es el porcentaje de los ingresos que la persona no gasta, con el propósito de
+                  contar con recursos económicos para un desembolso que podría efectuarse más adelante,
+                  invertirlo en un objetivo de futuro o simplemente reservarlo para una circunstancia
+                  inesperada”
+                </p>
+                <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              </div>
             </div>
           </div>
         </div>
@@ -152,15 +187,21 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Inversiones</h3>
-              <p class="text-black h5">
-                “Cuando hablamos de educación financiera, el concepto de inversión es uno de los
-                primeros que resalta, porque nos permite hacer crecer nuestro dinero de manera más
-                sostenible en el tiempo. Básicamente se trata de no consumir en el corto plazo los ahorros o
-                patrimonios que tenemos, sino ponerlos a trabajar para que nos produzcan más beneficios a
-                lo largo del tiempo”
-              </p>
-              <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              <div class="category-logo">
+                <!-- Imagen del logo de la categoría -->
+                <img src="images/inversionesLogo.PNG" alt="Logo Educación Financiera" class="img-fluid">
+              </div>
+              <div>
+                <h3 class="heading text-primary">Inversiones</h3>
+                <p class="text-black h5">
+                  “Cuando hablamos de educación financiera, el concepto de inversión es uno de los
+                  primeros que resalta, porque nos permite hacer crecer nuestro dinero de manera más
+                  sostenible en el tiempo. Básicamente se trata de no consumir en el corto plazo los ahorros o
+                  patrimonios que tenemos, sino ponerlos a trabajar para que nos produzcan más beneficios a
+                  lo largo del tiempo”
+                </p>
+                <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              </div>
             </div>
           </div>
         </div>
@@ -170,15 +211,21 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Tarjetas de crédito y débito</h3>
-              <p class="text-black h5">
-                “La principal diferencia entre una tarjeta de débito y una tarjeta de crédito es la forma de
-                pago. En una tarjeta de débito, el pago se carga directamente en la cuenta corriente del
-                titular. Así, solo permiten el cobro hasta el límite de los fondos de la cuenta. Con la tarjeta
-                de crédito es posible pagar incluso si no se dispone de fondos, ya que es posible aplazar el
-                cobro hasta el mes siguiente.”
-              </p>
-              <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              <div class="category-logo">
+                <!-- Imagen del logo de la categoría -->
+                <img src="images/tarjetasLogo.PNG" alt="Logo Educación Financiera" class="img-fluid">
+              </div>
+              <div>
+                <h3 class="heading text-primary">Tarjetas de crédito y débito</h3>
+                <p class="text-black h5">
+                  “La principal diferencia entre una tarjeta de débito y una tarjeta de crédito es la forma de
+                  pago. En una tarjeta de débito, el pago se carga directamente en la cuenta corriente del
+                  titular. Así, solo permiten el cobro hasta el límite de los fondos de la cuenta. Con la tarjeta
+                  de crédito es posible pagar incluso si no se dispone de fondos, ya que es posible aplazar el
+                  cobro hasta el mes siguiente.”
+                </p>
+                <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              </div>
             </div>
           </div>
         </div>
@@ -188,14 +235,19 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Planificación para el retiro </h3>
-              <p class="text-black h5">
-                “La planificación del retiro es un proceso que consiste en establecer metas de ingresos para
-                la jubilación y seguir con las acciones necesarias para lograr esas mismas metas. Si tienes
-                como objetivo retirarte con más del 70, 80 o 90% de tus ingresos actuales para disfrutarlos
-                en la jubilación, no solo debes ahorrar, sino también invertir adecuadamente”
-              </p>
-              <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              <div class="category-logo">
+                <img src="images/retiroLogo.PNG" alt="Logo Educación Financiera" class="img-fluid">
+              </div>
+              <div>
+                <h3 class="heading text-primary">Planificación para el retiro </h3>
+                <p class="text-black h5">
+                  “La planificación del retiro es un proceso que consiste en establecer metas de ingresos para
+                  la jubilación y seguir con las acciones necesarias para lograr esas mismas metas. Si tienes
+                  como objetivo retirarte con más del 70, 80 o 90% de tus ingresos actuales para disfrutarlos
+                  en la jubilación, no solo debes ahorrar, sino también invertir adecuadamente”
+                </p>
+                <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              </div>
             </div>
           </div>
         </div>
@@ -205,14 +257,19 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Impuestos</h3>
-              <p class="text-black h5">
-                “ Los impuestos son una contribución (pago) en dinero o en especie, de carácter
-                obligatorio, con la que cooperamos para fortalecer la economía del país. Los impuestos, en
-                todos los sistemas económicos de los países, sirven para proveer de recursos al gobierno y
-                éste pueda alcanzar los objetivos propuestos en su planeación”
-              </p>
-              <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              <div class="category-logo">
+                <img src="images/impuestosLogo.PNG" alt="Logo Educación Financiera" class="img-fluid">
+              </div>
+              <div>
+                <h3 class="heading text-primary">Impuestos</h3>
+                <p class="text-black h5">
+                  “ Los impuestos son una contribución (pago) en dinero o en especie, de carácter
+                  obligatorio, con la que cooperamos para fortalecer la economía del país. Los impuestos, en
+                  todos los sistemas económicos de los países, sirven para proveer de recursos al gobierno y
+                  éste pueda alcanzar los objetivos propuestos en su planeación”
+                </p>
+                <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              </div>
             </div>
           </div>
         </div>
@@ -222,14 +279,19 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
-              <h3 class="heading text-primary">Seguros</h3>
-              <p class="text-black h5">
-                “El seguro es un medio eficaz para la protección de los individuos frente a las
-                consecuencias de los riesgos. Se basa en transferirlos a una aseguradora que se encarga de
-                reparar o indemnizar todo o parte del perjuicio producido por la aparición de determinadas
-                situaciones accidentales”
-              </p>
-              <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              <div class="category-logo">
+                <img src="images/segurosLogo.PNG" alt="Logo Educación Financiera" class="img-fluid">
+              </div>
+              <div>
+                <h3 class="heading text-primary">Seguros</h3>
+                <p class="text-black h5">
+                  “El seguro es un medio eficaz para la protección de los individuos frente a las
+                  consecuencias de los riesgos. Se basa en transferirlos a una aseguradora que se encarga de
+                  reparar o indemnizar todo o parte del perjuicio producido por la aparición de determinadas
+                  situaciones accidentales”
+                </p>
+                <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              </div>
             </div>
           </div>
         </div>
@@ -239,6 +301,10 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
+              <div class="category-logo">
+                <img src="images/vienesLogo.PNG" alt="Logo Educación Financiera" class="img-fluid">
+              </div>
+              <div>
               <h3 class="heading text-primary">Bienes raíces</h3>
               <p class="text-black h5">
                 “Cuando se reduce a lo básico, el sector inmobiliario tiene un significado sencillo. Es un
@@ -248,6 +314,7 @@
                 la propiedad”
               </p>
               <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              </div>
             </div>
           </div>
         </div>
@@ -257,6 +324,10 @@
         <div class="col-lg-12 order-lg-2 px-lg-5">
           <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
+              <div class="category-logo">
+                <img src="images/emprendimientoLogo.PNG" alt="Logo Educación Financiera" class="img-fluid">
+              </div>
+              <div>
               <h3 class="heading text-primary">Emprendimiento</h3>
               <p class="text-black h5">
                 “La gestión financiera es fundamental para el éxito de cualquier emprendedor. Mantener
@@ -266,6 +337,7 @@
                 financiamiento”
               </p>
               <a class="text-primary h5" href="listavideos.html">Iniciar -></a>
+              </div>
             </div>
           </div>
         </div>
