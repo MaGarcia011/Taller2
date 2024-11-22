@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
   <link rel="stylesheet" href="css/tiny-slider.css">
   <link rel="stylesheet" href="css/aos.css">
@@ -88,17 +89,61 @@
 
       <div class="row justify-content- align-items-stretch">
         <div class="col-lg-12 order-lg-2 px-lg-5">
-          <div class="card border-primary" style="margin: 30px; border: 2px solid #305DE8; border-radius: 10px;">
+          <div class="card border-primary" style="margin: 10px; border: 2px solid #305DE8; border-radius: 10px;">
             <div class="card-body">
               
               <h3 class="heading text-primary">Test final</h3>
+              <form id="quizForm">
+                <!-- Pregunta 1 -->
+                <div class="question">
+                  <h5>1. ¿Qué es el patrimonio neto?</h5>
+                  <label><input type="radio" name="q1" value="incorrecto"> Los ingresos que recibes cada mes.</label><br>
+                  <label><input type="radio" name="q1" value="correcto"> La diferencia entre activos y pasivos.</label><br>
+                  <label><input type="radio" name="q1" value="incorrecto"> El valor de tus bienes materiales.</label>
+                </div>
+                <hr>
 
-              
-              <p class="text-black h5">
-                Test
-              </p>
-              <a class="text-primary h5" href="Categoria.html">Calificar -></a>
-              
+                <!-- Pregunta 2 -->
+                <div class="question">
+                  <h5>2. ¿Qué es un activo financiero?</h5>
+                  <label><input type="radio" name="q2" value="correcto"> Algo que genera ingresos o valor.</label><br>
+                  <label><input type="radio" name="q2" value="incorrecto"> Un objeto que pierde valor con el tiempo.</label><br>
+                  <label><input type="radio" name="q2" value="incorrecto"> Un gasto recurrente.</label>
+                </div>
+                <hr>
+
+                <!-- Pregunta 3 -->
+                <div class="question">
+                  <h5>3. ¿Qué significa diversificar tus inversiones?</h5>
+                  <label><input type="radio" name="q3" value="incorrecto"> Colocar todo tu dinero en una sola inversión.</label><br>
+                  <label><input type="radio" name="q3" value="correcto"> Invertir en diferentes tipos de activos para reducir riesgos.</label><br>
+                  <label><input type="radio" name="q3" value="incorrecto"> Evitar invertir dinero en absoluto.</label>
+                </div>
+                <hr>
+
+                <!-- Pregunta 4 -->
+                <div class="question">
+                  <h5>4. ¿Cuál es la importancia de llevar un presupuesto?</h5>
+                  <label><input type="radio" name="q4" value="correcto"> Ayuda a planificar ingresos y gastos.</label><br>
+                  <label><input type="radio" name="q4" value="incorrecto"> Elimina la necesidad de ahorrar.</label><br>
+                  <label><input type="radio" name="q4" value="incorrecto"> Garantiza que siempre tendrás dinero extra.</label>
+                </div>
+                <hr>
+
+                <!-- Pregunta 5 -->
+                <div class="question">
+                  <h5>5. ¿Qué es el interés compuesto?</h5>
+                  <label><input type="radio" name="q5" value="correcto"> Es el interés que se acumula sobre el capital y los intereses previos.</label><br>
+                  <label><input type="radio" name="q5" value="incorrecto"> Es el interés que se paga solo sobre el capital inicial.</label><br>
+                  <label><input type="radio" name="q5" value="incorrecto"> Es un pago único que realizas al pedir un préstamo.</label>
+                </div>
+                <hr>
+
+                <button type="button" class="btn btn-primary" onclick="submitQuiz()">Enviar Respuestas</button>
+              </form>
+
+              <div id="result" class="result text-center text-primary mt-3"></div>
+              <a id="videoLink" href="Categoria.html" class="btn btn-success mt-3" onclick="checkIfCompleted(event)">Ir a Categorías</a>
             </div>
           </div>
         </div>
@@ -117,6 +162,36 @@
     </div> 
   </div> 
 
+  <!-- SweetAlert2 Script -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    let quizCompleted = false;
+
+    function submitQuiz() {
+      const form = document.getElementById('quizForm');
+      const resultDiv = document.getElementById('result');
+      const answers = Array.from(form.elements).filter(el => el.checked && el.value === "correcto");
+      const totalQuestions = form.querySelectorAll('.question').length;
+      const score = answers.length;
+
+      resultDiv.innerHTML = `Tu puntaje es: ${score} / ${totalQuestions}`;
+      quizCompleted = true; // Indica que el cuestionario ha sido completado
+    }
+
+    function checkIfCompleted(event) {
+      if (!quizCompleted) {
+        event.preventDefault(); // Detiene el comportamiento predeterminado del enlace
+        Swal.fire({
+          icon: 'warning',
+          title: 'Completa el test',
+          text: 'Debes completar el test antes de ir a Categorías.',
+          confirmButtonText: 'Entendido',
+          confirmButtonColor: '#3085d6'
+        });
+      }
+    }
+  </script>
     <!-- Preloader -->
     <div id="overlayer"></div>
     <div class="loader">
